@@ -1,5 +1,5 @@
 ---
-title: "Running Pihole with PhotonOS"
+title: Running Pihole with PhotonOS
 categories: Raspberry
 published: true
 ---
@@ -17,4 +17,6 @@ root@photon-rpi3 [ /opt/scripts/pihole ]# curl -L https://install.pi-hole.net > 
 root@photon-rpi3 [ /opt/scripts/pihole ]# chmod +x install_pihole.sh
 ```
 
-But when i ran the ```install_pihole.sh``` script
+But when i ran the ```install_pihole.sh``` script, i got an RPM error:
+
+![]({{site.baseurl}}/_images\pihole_install_error.JPG)
