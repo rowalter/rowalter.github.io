@@ -8,11 +8,13 @@ This little fellow i already use as a [Pulse IoT](https://www.vmware.com/product
 
 So i logged in and downloaded the install script:
 
-'''
+```
 root@photon-rpi3 [ /opt/scripts/pihole ]# curl -L https://install.pi-hole.net > install_pihole.sh
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100     5  100     5    0     0     18      0 --:--:-- --:--:-- --:--:--    18
 100  111k  100  111k    0     0   190k      0 --:--:-- --:--:-- --:--:--  190k
 root@photon-rpi3 [ /opt/scripts/pihole ]# chmod +x install_pihole.sh
-'''
+```
+
+But when i ran the `install_pihole.sh` script
