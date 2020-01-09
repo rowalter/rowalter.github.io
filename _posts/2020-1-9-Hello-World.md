@@ -19,4 +19,4 @@ root@photon-rpi3 [ /opt/scripts/pihole ]# chmod +x install_pihole.sh
 
 But when i ran the ```install_pihole.sh``` script, i got an RPM error:
 
-![]({{site.baseurl}}/_images\pihole_install_error.JPG)
+![]({{site.baseurl}}/_images/pihole_install_error.JPG)
