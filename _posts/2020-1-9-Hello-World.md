@@ -17,9 +17,4 @@ root@photon-rpi3 [ /opt/scripts/pihole ]# curl -L https://install.pi-hole.net > 
 root@photon-rpi3 [ /opt/scripts/pihole ]# chmod +x install_pihole.sh
 ```
 
-But when i ran the `install_pihole.sh` script
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
+But when i ran the ```install_pihole.sh``` script
