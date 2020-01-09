@@ -1,5 +1,5 @@
 ---
-title: Running Pihole with PhotonOS
+title: Running Pi-hole on Photon OS
 categories: Raspberry
 published: true
 ---
