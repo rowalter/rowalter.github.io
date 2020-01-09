@@ -47,6 +47,8 @@ Installing/Updating: dialog-1.3-4.20180621.ph3.aarch64
 Complete!
 ```
 
+Then i replaced whiptail with dialog in the install script.
+
 After that, i finally got a "screen" of the install-manager of Pi-hole:
 
 ![](/images/pihole_install_1st.JPG)
