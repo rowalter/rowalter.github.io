@@ -18,3 +18,8 @@ root@photon-rpi3 [ /opt/scripts/pihole ]# chmod +x install_pihole.sh
 ```
 
 But when i ran the `install_pihole.sh` script
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
