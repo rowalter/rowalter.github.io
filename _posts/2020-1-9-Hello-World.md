@@ -1,10 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: Running Pihole with PhotonOS
+published: true
 ---
-
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+I wanted to replace my older Raspberry Pi, which is currently runnung Pihole, with a newer one. I decided to use a Raspbbery Pi 3b+ which is currently running PhotonOS3. This little fellow i already as a [Pulse IoT](https://www.vmware.com/products/pulse-iot-device-management.html) gateway.
