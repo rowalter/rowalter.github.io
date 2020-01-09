@@ -20,3 +20,33 @@ root@photon-rpi3 [ /opt/scripts/pihole ]# chmod +x install_pihole.sh
 But when i ran the ```install_pihole.sh``` script, i got an RPM error:
 
 ![](/images/pihole_install_error.JPG)
+
+So i checked the install script on line 361.
+There it used whiptail to create an installer box.
+
+a short check showed that Photon OS doesn't bring whiptail with it, but the replacement, dialog, is available in the repository.
+so i installed it quickly:
+
+```
+root@photon-rpi3 [ /opt/scripts/pihole ]# dialog
+-bash: dialog: command not found
+root@photon-rpi3 [ /opt/scripts/pihole ]# tdnf install dialog
+
+Installing:
+dialog                                           aarch64                  1.3-4.20180621.ph3               photon                     522.80k 535349
+
+Total installed size: 522.80k 535349
+Is this ok [y/N]:y
+
+Downloading:
+dialog                                  240203    100%
+Testing transaction
+Running transaction
+Installing/Updating: dialog-1.3-4.20180621.ph3.aarch64
+
+Complete!
+```
+
+After that, i finally got a "screen" of the install-manager of Pi-hole:
+
+![](/images/pihole_install_1st.JPG)
