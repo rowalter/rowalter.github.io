@@ -1,7 +1,7 @@
 ---
 title: Running Pi-hole on Photon OS
 categories: Raspberry
-published: false
+published: true
 ---
 I wanted to replace my older Raspberry Pi, which is currently running Pi-hole, with a newer one. I decided to use a Raspbbery Pi 3b+ which is currently running Photon OS 3.0.
 This little fellow i already use as a [Pulse IoT](https://www.vmware.com/products/pulse-iot-device-management.html) gateway.
@@ -52,3 +52,14 @@ Then i replaced whiptail with dialog in the install script.
 After that, i finally got a "screen" of the install-manager of Pi-hole:
 
 ![](/images/pihole_install_1st.JPG)
+
+
+Download lighttpd RPM for Fedora
+```
+root@photon-rpi3 [ /tmp ]# curl https://rpmfind.net/linux/fedora/linux/development/rawhide/Everything/aarch64/os/Packages/l/lighttpd-1.4.54-4.fc32.aarch64.rpm -o /tmp/lighttpd-1.4.54-4.fc32.aarch64.rpm
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  443k  100  443k    0     0   773k      0 --:--:-- --:--:-- --:--:--  774k
+```
+
+
