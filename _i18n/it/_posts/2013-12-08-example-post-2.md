@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Example post 2
+title: Esempio post 2
 cover: cover.jpg
 date:   2013-12-08 12:00:00
-categories: en posts
+categories: it posts
 ---
 
-## Example 2
+## Esempio 2
 
-Example 2
+Esempio 2

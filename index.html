@@ -1,35 +1,8 @@
 ---
 layout: default
+title: Home
 ---
-<!DOCTYPE html>
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
-
-<html lang="{{ site.lang }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="description" content="{% t site.description %}"/>
-    <meta name="keywords" content="{% t site.keywords %}"/>
-    <title>{% t site.name %} - {% t site.tagline %}</title>
-</head>
-<body>
-    <section id="{% t main.welcomeSection.anchor%}">
-        <div>
-            <h2>{% t main.welcomeSection.heading %}</h2>
-            <p>{% t main.welcomeSection.p1 %}</p>
-        </div>
-    </section>
-</body>
-</html>
+{% assign page = site.posts.first %}
+{% assign content = page.content %}
+{% include post.html param="Include parameter value from index.html"%}
