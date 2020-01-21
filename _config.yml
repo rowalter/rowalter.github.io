@@ -13,3 +13,8 @@ include:
   - CONTRIBUTING.md
   - ISSUE_TEMPLATE.md
   - PULL_REQUEST_TEMPLATE.md
+languages: ["en", "de",]
+defaultLang: en
+languageNames:
+  de: Deutsch
+  en: English

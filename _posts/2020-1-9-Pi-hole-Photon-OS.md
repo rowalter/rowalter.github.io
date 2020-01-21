@@ -62,4 +62,14 @@ root@photon-rpi3 [ /tmp ]# curl https://rpmfind.net/linux/fedora/linux/developme
 100  443k  100  443k    0     0   773k      0 --:--:-- --:--:-- --:--:--  774k
 ```
 
+Adding Arch Linux Repo
+```
+root@photon-rpi3 [ ~ ]# cat > /etc/yum.repos.d/arch.repo << "EOF"
+> [ArchLinux]
+> name=ArchLinux Extra Repo(aarch64)
+> baseurl=http://ftp.hosteurope.de/mirror/ftp.archlinux.org/extra/os/$arch
+> enabled=1
+> skip_if_unavailable=True
+> EOF
+```
 
