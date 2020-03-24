@@ -51,7 +51,10 @@ boinccmd --project_attach http://boinc.bakerlab.org %account_key%
 After you run this command the client will start downloading work units and start working on that.
 But the access to the VM should be even more comfortable and of course it should also be possible to control it via the Boinc Manager on your own laptop.
 The SSH access should be secured by a public/private key pair so that access via Putty or similar is also possible.
-So you create a key pair using Puttygen, for example, and add correct key to the virtual machine using the "Edit" button (just scroll down) .![](/images/2020-3-24-Running BOINC on GCP_6.png)
+So you create a key pair using Puttygen, for example, and add correct key to the virtual machine using the "Edit" button (just scroll down).
+
+![](/images/2020-3-24-Running BOINC on GCP_6.png)
+
 After this you just need to create a new SSH session to the public IP adress of the instance and add the key file to it. When this is done, access is possible directly via Putty.
 
 ## Access to the client via Boinc Manager
