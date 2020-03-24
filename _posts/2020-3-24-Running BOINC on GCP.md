@@ -18,4 +18,26 @@ Basically you only need to create a simple f1-micro instance. I chose an SDDC in
 
 Then the instance must be created, which only takes a few seconds.![](/images/2020-3-24-Running BOINC on GCP_2.png)
 
-You can immediately connect to the VM via SSH. ((Press the button SSH)) ![](/images/2020-3-24-Running BOINC on GCP_3.png)
+You can immediately connect to the VM via SSH. (Press the button SSH) ![](/images/2020-3-24-Running BOINC on GCP_3.png)
+
+with
+```
+sudo apt-get install boinc-client
+```
+you can install the necessary packages for BOINC. The installation takes about 5 minutes and maybe you need to update the OS with apt-get upgrade.
+
+When the installation is finished, a project can be attached via the command line. To do this, the appropriate key must first be read from the BOINC account. This is done with the command: 
+```
+boinccmd --loockup_account %project_URL% %User_eMail% %passwd%
+```
+so i used
+```
+boinccmd --loockup_account http://boinc.bakerlab.org %User_eMail% %passwd%
+```
+because the [Rosetta Projekt](http://boinc.bakerlab.org) is working on the COVID-19 problem.
+
+With the account key which yoh get from the command you can add this "worker in the cloud" to your account.
+```
+boinccmd --project_attach http://boinc.bakerlab.org %account_key%
+```
+After you run this command the client will start downloading work units and start working on that.
