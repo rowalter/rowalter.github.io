@@ -12,5 +12,5 @@ After a hint of a colleague to the entry offer of the Google Cloud Platform, I h
 
 Here I want to show you how everyone can use the instance and control it from home.
 
-First you have to create a Google Cloud Account, which is really not difficult and is explained e.g. in [this] (https://medium.com/@hbmy289/how-to-set-up-a-free-micro-vps-on-google-cloud-platform-bddee893ac09) blog entry.
+First you have to create a Google Cloud Account, which is really not difficult and is explained e.g. in [this](https://medium.com/@hbmy289/how-to-set-up-a-free-micro-vps-on-google-cloud-platform-bddee893ac09) blog entry.
 
