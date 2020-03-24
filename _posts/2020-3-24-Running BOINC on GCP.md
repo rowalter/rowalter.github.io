@@ -65,6 +65,7 @@ Since the operation of the Boinc instance is quasi headless, an access of the lo
 A firewall rule must be set up to allow RPC access to the corresponding port. Also the client must be configured in the VM to allow access (password protected).
 
 You can configure the firewall rule through the network settings: (allow Port 31416)
+
 ![](/images/2020-3-24-Running BOINC on GCP_12.png)
 
 Add this rule to the networking details of the VM:
