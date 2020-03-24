@@ -16,7 +16,9 @@ First you have to create a Google Cloud Account, which is really not difficult a
 
 ## Creating an instance
 
-Basically you only need to create a simple f1-micro instance. I chose an SDDC in Iowa and selected the smallest instance there. As OS I chose a current Debian with 10GB "non-volatile" memory. ![](/images/2020-3-24-Running BOINC on GCP_1.png)
+Basically you only need to create a simple f1-micro instance. I chose an SDDC in Iowa and selected the smallest instance there. As OS I chose a current Debian with 10GB "non-volatile" memory. 
+
+![](/images/2020-3-24-Running BOINC on GCP_1.png)
 
 Then the instance must be created, which only takes a few seconds.
 
