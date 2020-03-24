@@ -14,7 +14,7 @@ Here I want to show you how everyone can use the instance and control it from ho
 
 First you have to create a Google Cloud Account, which is really not difficult and is explained e.g. in [this](https://medium.com/@hbmy289/how-to-set-up-a-free-micro-vps-on-google-cloud-platform-bddee893ac09) blog entry.
 
-## Creating an instance
+## Creating an instance with a client
 
 Basically you only need to create a simple f1-micro instance. I chose an SDDC in Iowa and selected the smallest instance there. As OS I chose a current Debian with 10GB "non-volatile" memory. 
 
