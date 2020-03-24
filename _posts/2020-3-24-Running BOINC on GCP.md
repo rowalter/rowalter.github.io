@@ -27,16 +27,18 @@ sudo apt-get install boinc-client
 you can install the necessary packages for BOINC. The installation takes about 5 minutes and maybe you need to update the OS with apt-get upgrade.
 
 When the installation is finished, a project can be attached via the command line. To do this, the appropriate key must first be read from the BOINC account. This is done with the command: 
+
 ```
 boinccmd --loockup_account %project_URL% %User_eMail% %passwd%
 ```
 so i used
+
 ```
 boinccmd --loockup_account http://boinc.bakerlab.org %User_eMail% %passwd%
 ```
 because the [Rosetta Projekt](http://boinc.bakerlab.org) is working on the COVID-19 problem.
 
-With the account key which yoh get from the command you can add this "worker in the cloud" to your account.
+With the account key which you get from the command you can add this "worker in the cloud" to your account.
 ```
 boinccmd --project_attach http://boinc.bakerlab.org %account_key%
 ```
@@ -51,5 +53,31 @@ After this you just need to create a new SSH session to the public IP adress of 
 Since the operation of the Boinc instance is quasi headless, an access of the local manager to this instance must be established. 
 A firewall rule must be set up to allow RPC access to the corresponding port. Also the client must be configured in the VM to allow access (password protected).
 
-You can configure the firewall rule through the network settings:
+You can configure the firewall rule through the network settings: (allow Port 31416)
 ![](/images/2020-3-24-Running BOINC on GCP_12.png)
+
+Add this rule to the networking details of the VM:
+
+![](/images/2020-3-24-Running BOINC on GCP_11.png)
+
+To enable remote access to the Boinc Client in the VM, the corresponding configuration file **etc/boinc-client/cc_config.xml** needs to be edited. You need to add 
+```
+	<options>
+          <allow_remote_gui_rpc>1</allow_remote_gui_rpc>
+	</options>
+```
+
+The whole file should look like:
+
+![](/images/2020-3-24-Running BOINC on GCP_8.png)
+
+Also you need to add a password(string) to **/etc/boinc-client/gui_rpc_auth.cfg**
+
+Finally, Boinc Manager can be used to connect to and control the actual client in the VM.
+
+![](/images/2020-3-24-Running BOINC on GCP_9.png)
+
+### Concluding words
+
+After I initially connected to the client, the status was "Waiting for memory". This means that the memory of the VM is not sufficient to load the work package. The packages for the Rosetta project are about 350-370 MB in size. However, the available memory is only about 330 MB. For this reason I have added my other project (WorldCommunity Grid)[https://www.worldcommunitygrid.org/]. Most of the packages there are about 35MB in size, so they can easily be processed in the cloud. Maybe it helps to choose an OS other than Debian to have more memory of the f1-micro instance available for applications.
+
