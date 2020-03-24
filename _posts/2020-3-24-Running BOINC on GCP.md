@@ -18,4 +18,4 @@ Basically you only need to create a simple f1-micro instance. I chose an SDDC in
 
 Then the instance must be created, which only takes a few seconds.![](/images/2020-3-24-Running BOINC on GCP_2.png)
 
-
+You can immediately connect to the VM via SSH. ((Press the button SSH)) ![](/images/2020-3-24-Running BOINC on GCP_3.png)
