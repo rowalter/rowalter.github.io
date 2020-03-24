@@ -3,7 +3,7 @@ title: Running BOINC on free GCP instance
 categories: Cloud
 published: true
 ---
-The calculation of proteins, better known as Folding@Home, has recently become very popular again. The trigger was certainly the corona crisis.
+Spending compute ressources for calculation on various problems has recently become very popular again. The trigger was certainly the corona crisis.
 Some colleagues at VMware have developed a Fling for this purpose, which is also becoming increasingly popular.
 
 But not everyone has a Homelab with sufficient computing power available. Therefore I have been thinking about moving this workload into the cloud for quite some time. 
