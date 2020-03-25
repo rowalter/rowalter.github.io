@@ -23,7 +23,7 @@ plugins:
 url: 'rowalter.github.io'
 baseurl: ''
 title: 'rowalter.github.io'
-description: 'This is my website'
+description: 'Small but growing'
 permalink: pretty
 logo: "/images/site/avatar.jpg"
 
