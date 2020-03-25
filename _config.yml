@@ -63,7 +63,7 @@ sharing_links:
 # Collections
 collections:
   posts:
-    title: Recent Posts
+    title: Posts
     output: true
     description: "My ideas and little projects"
     feature_text: |
