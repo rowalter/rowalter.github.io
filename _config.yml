@@ -22,14 +22,22 @@ plugins:
 # Site settings
 url: 'rowalter.github.io'
 baseurl: ''
-title: 'My website'
-description: 'This is my new website'
+title: 'rowalter.github.io'
+description: 'This is my website'
 permalink: pretty
 logo: "/images/site/avatar.jpg"
 
-# Pagination
+# GEM Settings
 paginate: 5
 paginate_path: blog/page:num
+jekyll-mentions: https://twitter.com 
+twitter:
+  username: rowalter_vmw
+author: Robert Walter 
+social: 
+  name: Robert Walter 
+  links:  
+    - https://twitter.com/rowalter_vmw
 
 # Header nav
 navigation_header:
@@ -45,12 +53,20 @@ navigation_footer:
 - title: Back to top
   url: "#top"
 
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  Twitter: https://twitter.com/rowalter_vmw
+
+sharing_links:
+  Twitter: true
+  Email: true
+  
 # Collections
 collections:
   posts:
-    title: Posts
+    title: Recent Posts
     output: true
-    description: "My thoughts and ideas"
+    description: "My ideas and little projects"
     feature_text: |
+  ## Robert Walter
       Welcome to my blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+    feature_image: "/images/site/23225.jpg"
