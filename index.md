@@ -1,9 +1,9 @@
 ---
 title: Welcome to my website
 layout: page
-feature_image: "https://picsum.photos/1300/400?image=989"
+feature_image: "/images/site/626827532.jpg"
 feature_text: |
-  ## Hello world
+  ## Robert Walter
 ---
 
 There isn't much going on here yet, but watch this space
