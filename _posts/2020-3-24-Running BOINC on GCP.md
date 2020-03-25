@@ -18,15 +18,15 @@ First you have to create a Google Cloud Account, which is really not difficult a
 
 Basically you only need to create a simple f1-micro instance. I chose an SDDC in Iowa and selected the smallest instance there. As OS I chose a current Debian with 10GB "non-volatile" memory. 
 
-![](/images/2020-3-24-Running BOINC on GCP_1.png?lightbox=1024&cropResize=200,200)
+![](/images/2020-3-24-Running BOINC on GCP_1.png# thumbnail bordered)
 
 Then the instance must be created, which only takes a few seconds.
 
-![](/images/2020-3-24-Running BOINC on GCP_2.png?lightbox=1024&cropResize=200,200)
+![](/images/2020-3-24-Running BOINC on GCP_2.png)
 
 You can immediately connect to the VM via SSH. (Press the button SSH)
 
-![](/images/2020-3-24-Running BOINC on GCP_3.png?lightbox=1024&cropResize=200,200)
+![](/images/2020-3-24-Running BOINC on GCP_3.png)
 
 with
 ```
