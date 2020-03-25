@@ -65,8 +65,7 @@ collections:
   posts:
     title: Posts
     output: true
-    description: "My ideas and little projects"
+    description: "My thoughts and ideas"
     feature_text: |
-  ## Robert Walter
       Welcome to my blog
     feature_image: "/images/site/23225.jpg"
