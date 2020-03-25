@@ -91,5 +91,5 @@ Finally, Boinc Manager can be used to connect to and control the actual client i
 
 ### Concluding words
 
-After I initially connected to the client, the status was "Waiting for memory". This means that the memory of the VM is not sufficient to load the work package. The packages for the Rosetta project are about 350-370 MB in size. However, the available memory is only about 330 MB. For this reason I have added my other project (WorldCommunity Grid)[https://www.worldcommunitygrid.org/]. Most of the packages there are about 35MB in size, so they can easily be processed in the cloud. Maybe it helps to choose an OS other than Debian to have more memory of the f1-micro instance available for applications.
+After I initially connected to the client, the status was "Waiting for memory". This means that the memory of the VM is not sufficient to load the work package. The packages for the Rosetta project are about 350-370 MB in size. However, the available memory is only about 330 MB. For this reason I have added my other project [WorldCommunity Grid](https://www.worldcommunitygrid.org/). Most of the packages there are about 35MB in size, so they can easily be processed in the cloud. Maybe it helps to choose an OS other than Debian to have more memory of the f1-micro instance available for applications.
 
